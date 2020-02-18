@@ -1,0 +1,134 @@
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: skyblue;
+  flex-direction: column;
+  font-family: 'Ubuntu';
+}
+
+#clear {
+  display: inline-block;
+  position: relative;
+  left: -226px;
+  top: 42px;
+  background: white;
+  padding: 4px;
+  transform: rotateZ(-90deg);
+  z-index: 0;
+  border: 3px solid #ccd;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(32, 1fr);
+  grid-template-rows: repeat(32, auto);
+  width: 400px;
+  height: 400px;
+  border: 3px solid #ccd;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.6);
+  margin: auto;
+  margin-top: -26px;
+  background: white;
+}
+
+#header {
+  display: block;
+  width: 400px;
+  margin-bottom: 14px;
+  text-align: center;
+  background: white;
+  border: 3px solid #ccd;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.6);
+}
+.settings {
+  display: block;
+  width: 400px;
+  margin-top: 14px;
+  background: white;
+  border: 3px solid #ccd;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.set-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.colors {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.colors:hover {
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+}
+
+#red {
+  background: red;
+}
+#orange {
+  background: orange;
+}
+#yellow {
+  background: yellow;
+}
+#green {
+  background: green;
+}
+#blue {
+  background: blue;
+}
+#purple {
+  background: purple;
+}
+#white {
+  background: white;
+  border: 1px solid;
+}
+
+#pattern-shape {
+  border: 1px solid;
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.pattern-size {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-size {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  line-height: 30px;
+  box-sizing: border-box;
+}
+
+.p-size:hover {
+  border-bottom: 2px solid;
+}
+
+.p-size-border {
+  border-bottom: 2px solid;
+}
